@@ -7,11 +7,11 @@ rm -r public
 npm run build
 
 # commit changes
-rm -r dist
-mkdir -p dist
-mv public/* dist/
+rm -r docs
+mkdir -p docs
+mv public/* docs/
 
-cd dist
+cd docs
 git add .
 
 msg="deploying site $(date)"
